@@ -1,0 +1,6 @@
+1. Maintain history of every transaction. - Have a idea but have to implement it.
+2. Graphs from database.
+3. Delete Column
+4. Username not available in real time
+5. Sending mail/ Captcha/ Question and answer for Resetting password.
+6. 

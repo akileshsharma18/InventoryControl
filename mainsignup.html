@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <link rel="icon" href="Images/LogoMakr.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      ::-webkit-scrollbar 		{ width:0.50em;height:0.35em; background: #C6C6C6; }
+      ::-webkit-scrollbar-thumb 	{ background: #4586D3; border-radius:10px;}
+      ::-webkit-scrollbar-thumb:hover	{ background: #00658F; border-radius:10px; }
+      @media screen and (max-height: 450px) {
+           *  {padding-top: 15px; width: 80%;}
+            * a {font-size: 18px;}
+      }
+      * {
+          box-sizing: border-box;
+          font-family: "Segoe UI Light",monospace;
+      }
+      .bg {
+           background-image: url("Images/signupmain.jpg");
+           height: 95%;
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover;
+      }
+      .inli{
+        display: inline;
+      }
+      .but{
+        background-color: grey;
+        height: 8%;
+        width: 30%;
+        outline: none;
+        font-size: 18px;
+        font-weight: bold;
+        border-width: 0;
+        opacity: 0.9;
+        color: white;
+        cursor: pointer;
+      }
+      .but:hover{
+        background-color: lightgrey;
+        color: red;
+        border-style: dashed;
+        border-width: 1;
+        border-bottom-color: red;
+        opacity: 0.5;
+        font-weight: bold;
+        font-size: 24px;
+        transition: all 0.9s ease;
+      }
+	  
+	  #nav {
+        height: 12%;
+        background: transparent; // Transparent can also be used.
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        color: black;
+        transition: all ease .3s;
+      }
+
+      #logo {
+           top: 15%;
+           color: black;
+           font-size: 18px;
+           transition: all ease .5s;
+           height: 15% !important;
+      }
+
+      #nav.shrink {
+        height: 10%;
+        transition: all ease .7s;
+        background: white;// Change background on scroll
+        opacity: 0.8;
+      }
+
+
+      #nav.shrink #logo {
+        transition: all ease .5s;
+      }
+	  .nav-bar{
+        position: relative;
+        background-color: #60b0f4;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        position: fixed;
+	   border-color: transparent;
+      }
+      .imgset{
+           position: absolute;
+           top: 0%;
+           left: 2%;
+      }
+    </style>
+	<script src="js/jquery.js"></script>
+	<script src="js/navshrink.js"></script>
+	<script src="js/new1.js">  </script>
+  </head>
+  <body class="bg">
+  
+  <div class="nav-bar" id="nav">
+      <div class="imgset" id="logo">
+        <font size="6">
+                  <a href="MainPage.php" style="text-decoration: none; color: black;"><b>Inventory Control</b></a>
+        </font>
+      </div>
+    </div>
+  
+    <center>
+      <h1>
+        <br><br>Manage your Inventory in a easy way. Sign Up as one of the following.<br><br>
+      </h1>
+      <div class=inli>
+        <a href="comsignup.php">
+          <input type="button" value="Administrator" class="but">
+        </a>
+        <a href="shopsignup.php">
+          <input type="button" value="Shop Administrator" class="but">
+        </a>
+        <a href="shopkeepersignup.php">
+          <input type="button" value="Shop Keeper" class="but">
+        </a>
+
+        <h2>
+          Already have an account. <a href=signin.php>Sign-In</a>
+        </h2>
+      </div>
+    </center>
+  </body>
+</html>
